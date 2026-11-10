@@ -1,0 +1,13 @@
+node_modules
+.expo/
+dist/
+server/dist/
+server/node_modules/
+.metro/
+*.tsbuildinfo
+.env
+.env.local
+.env.*.local
+secrets/
+!secrets/.gitkeep
+refs

@@ -1,0 +1,69 @@
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+env: load .env
+env: export EXPO_PUBLIC_API_BASE_URL EXPO_PUBLIC_APP_NAME EXPO_PUBLIC_APP_VERSION EXPO_PUBLIC_DEFAULT_COUNTRY_CODE EXPO_PUBLIC_ENVIRONMENT EXPO_PUBLIC_PAYSTACK_PUBLIC_KEY EXPO_PUBLIC_SUPABASE_ANON_KEY EXPO_PUBLIC_SUPABASE_URL EXPO_PUBLIC_XAI_API_KEY PAYSTACK_ESCROW_ACCOUNT PAYSTACK_GAMING_PRO PAYSTACK_MEAD_AI_PLAN PAYSTACK_MEAD_AUDIO_CALLS_PRO PAYSTACK_MEAD_SELLER_VERIFICATION PAYSTACK_MEAD_VIDEO_CALL_PRO PAYSTACK_MEGA_GROUP_UPGRADE PAYSTACK_POST_MEAD_BREW PAYSTACK_SECRET_KEY
+Starting Metro Bundler
+
+warning: Bundler cache is empty, rebuilding (this may take a minute)
+Android .\index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+| (node:19964) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:19964) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+Android .\index.ts ▓▓░░░░░░░░░░░░░░ 16.0% ( 41/161)
+| (node:19964) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+Android .\index.ts ▓▓░░░░░░░░░░░░░░ 16.0% (105/264)
+Android .\index.ts ▓▓▓▓░░░░░░░░░░░░ 30.5% (220/405)
+Android .\index.ts ▓▓▓▓▓░░░░░░░░░░░ 36.0% (371/681)
+Android .\index.ts ▓▓▓▓▓▓▓░░░░░░░░░ 48.9% (602/882)
+Android .\index.ts ▓▓▓▓▓▓▓▓▓░░░░░░░ 61.2% (723/924)
+Android .\index.ts ▓▓▓▓▓▓▓▓▓▓░░░░░░ 63.8% (750/942)
+Android .\index.ts ▓▓▓▓▓▓▓▓▓▓▓▓░░░░ 77.9% (870/998)
+Android .\index.ts ▓▓▓▓▓▓▓▓▓▓▓▓░░░░ 77.9% ( 901/1312)
+Android .\index.ts ▓▓▓▓▓▓▓▓▓▓▓▓░░░░ 77.9% (1205/1415)
+Android Bundling failed 39323ms index.ts (1500 modules)
+
+Error: Unable to resolve module stream from C:\Users\m\mead-fresh-new\mead-app-full\node_modules\@supabase\realtime-js\node_modules\ws\lib\stream.js: stream could not be found within the project or in these directories:
+  node_modules\@supabase\realtime-js\node_modules
+  node_modules
+  ..\..\node_modules
+[0m [90m 3 |[39m
+ [90m 4 |[39m [36mconst[39m [33mWebSocket[39m [33m=[39m require([32m'./websocket'[39m)[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mconst[39m { [33mDuplex[39m } [33m=[39m require([32m'stream'[39m)[33m;[39m
+ [90m   |[39m                             [31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [90m/**[39m
+ [90m 8 |[39m [90m * Emits the `'close'` event on a stream.[39m[0m
+
+Import stack:
+
+ node_modules\@supabase\realtime-js\node_modules\ws\lib\stream.js
+ | import "stream"
+
+ node_modules\@supabase\realtime-js\node_modules\ws\wrapper.mjs
+ | import "./lib/stream.js"
+
+ node_modules\@supabase\realtime-js\dist\module\RealtimeClient.js
+ | import "ws"
+
+ node_modules\@supabase\realtime-js\dist\module\index.js
+ | import "./RealtimeClient"
+
+ node_modules\@supabase\supabase-js\dist\module\index.js
+ | import "@supabase/realtime-js"
+
+ src\utils\supabaseClient.ts
+ | import "@supabase/supabase-js"
+
+ src\utils\offline.tsx
+ | import "./supabaseClient"
+
+ App.tsx
+ | import "./src/utils/offline"
+
+ index.ts
+ | import "./App"
+
+ 
+ | import "./index.ts"
+

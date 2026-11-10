@@ -1,0 +1,89 @@
+{
+  "expo": {
+    "name": "Mead",
+    "slug": "mead-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "mead",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.benardwangai.mead",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Mead requires camera access for Reels creation, Live streaming, dual-camera calls, Marketplace photo uploads, and profile pictures.",
+        "NSMicrophoneUsageDescription": "Mead requires microphone access for Calls, Live streaming, voice messages, Mead AI voice mode, and group voice/video calls.",
+        "NSPhotoLibraryUsageDescription": "Mead requires photo library access for uploading images to Marketplace listings, Reels, profiles, and groups.",
+        "NSPhotoLibraryAddUsageDescription": "Mead requires permission to save downloaded content from Entertainment, Reels, and Live streams.",
+        "UIBackgroundModes": [
+          "fetch",
+          "remote-notification",
+          "audio"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.benardwangai.mead",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.FOREGROUND_SERVICE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-asset",
+      "expo-font",
+      "expo-splash-screen",
+      "expo-video",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#D4AF37"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d05cf06e-60c8-4a75-9c54-9cb2b3555371"
+      },
+      "EXPO_PUBLIC_SUPABASE_URL": "https://kawqtpsqjxauvfeazbpo.supabase.co",
+      "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imthd3F0cHNxanhhdXZmZWF6YnBvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY3ODMzMDEsImV4cCI6MjA5MjM1OTMwMX0.ZGQieErZPXX-hWNgx9GlcwEcHLHkQ-rivpN-czSFpBg",
+      "EXPO_PUBLIC_API_BASE_URL": "https://api.meadtechnologies.com"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/d05cf06e-60c8-4a75-9c54-9cb2b3555371",
+      "fallbackToCacheTimeout": 0,
+      "checkAutomatically": "ON_ERROR_RECOVERY"
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "owner": "benardwangai"
+  }
+}

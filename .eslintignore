@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.expo/
+.metro/
+*.min.js
+babel.config.js
+metro.config.cjs
